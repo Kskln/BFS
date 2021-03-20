@@ -24,4 +24,26 @@ class Graph {
     }
   }
   
+  void BFS(int start){
+    boolean visited[]=new boolean[V];
+    Queue<Integer> q = new LinkedList<Integer>();
+    q.add(start);
+    System.out.println("BFS");
+    visited[start] = true ;
+    while(q.isEmpty()==false){
+      int node = q.poll();
+      System.out.println(node+ " ");
+      for(int x:graph.get(node)){
+        if(visited[x]==false){
+          visited[x]=true;
+          q.add(x);
+        }
+      }
+    }
+  }
+}
+
+        
+                      
+  
   
