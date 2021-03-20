@@ -12,5 +12,16 @@ class Graph {
       graph.add(new ArrayList<Integer>());
     }
   }
+  void addEdge(int v, int u){
+    graph.get(v).add(u);
+    graph.get(u).add(v);
+    
+  }
+  void printGraph(){
+    for(int i = 0;i<V;i++){
+      System.out.println("Node"+i);
+      for (int x:graph.get(i))System.out.print(" -> "+x);
+    }
+  }
   
   
