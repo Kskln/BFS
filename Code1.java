@@ -44,7 +44,7 @@ class Graph {
 }
 
         
-public class Graph{
+public class Graph1{
   public static void main (String args[]){
     Graph g = new Graph(5);
     g.addEdge(0,1);
