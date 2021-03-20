@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class Graph {
-  ArrayList<ArrayList<Inтeger>>graph;
+  ArrayList<ArrayList<Integer>>graph;
   int V;
   Graph(int nodes){
     V=nodes;
