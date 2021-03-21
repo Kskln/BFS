@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+//Define a Graph class
 class Graph {
   ArrayList<ArrayList<Integer>>graph;
   int V;
@@ -12,6 +13,8 @@ class Graph {
       graph.add(new ArrayList<Integer>());
     }
   }
+  
+  //Methods for add egde and print graph
   void addEdge(int v, int u){
     graph.get(v).add(u);
     graph.get(u).add(v);
@@ -23,7 +26,7 @@ class Graph {
       for (int x:graph.get(i))System.out.print(" -> "+x);
     }
   }
-  
+  //Breadth First Search method
   void BFS(int start){
     boolean visited[]=new boolean[V];
     Queue<Integer> q = new LinkedList<Integer>();
@@ -43,7 +46,7 @@ class Graph {
   }
 }
 
-        
+//Main class Graph1 with our methods     
 public class Graph1{
   public static void main (String args[]){
     Graph g = new Graph(5);
